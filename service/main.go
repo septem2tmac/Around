@@ -202,7 +202,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 
 	// Save to BigTable.
 	// you must update project name here
-	bt_client, err := bigtable.NewClient(ctx, PROJECT_ID, BT_INSTANCE)
+	/*bt_client, err := bigtable.NewClient(ctx, PROJECT_ID, BT_INSTANCE)
 	if err != nil {
 		panic(err)
 		return
@@ -222,7 +222,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 		return
 	}
-	fmt.Printf("Post is saved to BigTable: %s\n", p.Message)
+	fmt.Printf("Post is saved to BigTable: %s\n", p.Message)*/
 	//saveToBigTable(p, id)
 }
 
